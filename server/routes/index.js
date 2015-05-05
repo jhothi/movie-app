@@ -10,9 +10,7 @@ var params = {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    omdbApi.get(params, function (err, data) {
-        res.send(data);
-    });
+
 });
 
 
