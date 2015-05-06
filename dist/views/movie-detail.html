@@ -1,0 +1,25 @@
+<div class="movie-detail row">
+  <div class="poster col-md-4">
+    <img ng-src="{{movie.Poster}}" class="image"/>
+  </div>
+  <div class="col-md-8">
+    <div class="description-container">
+      <div class="movie-content">
+        <div class="content-label">
+          Description:
+        </div>
+        <div class="content">
+          {{movie.Plot}}
+        </div>
+      </div>
+      <div class="movie-content">
+        <div class="content-label">
+          Actors:
+        </div>
+        <div class="content">
+          {{movie.Actors}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
