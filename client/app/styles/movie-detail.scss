@@ -1,9 +1,13 @@
 .movie-detail {
   .poster {
-
+    .image {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
   }
   .description-container {
     .movie-content {
+      margin-bottom: 10px;
       .content-label {
         display: inline;
       }

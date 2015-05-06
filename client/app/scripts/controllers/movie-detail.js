@@ -9,12 +9,12 @@
  */
 angular.module('clientApp')
   .controller('MovieDetailCtrl', function ($scope, $routeParams, $http) {
-    var id = $routeParams.id
+    var id = $routeParams.id;
 
 
     //TODO move to service
     $http.get('/api/movie-detail/' + id).success(function(data) {
-      console.log(data);
+      $scope.movie = data;
     });
 
   });
