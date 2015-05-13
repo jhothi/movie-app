@@ -8,10 +8,10 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $location) {
+    $scope.query = '';
+
+    $scope.goToSearch = function() {
+      $location.path('/search').search({q: $scope.query});
+    }
   });

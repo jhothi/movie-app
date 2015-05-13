@@ -16,4 +16,11 @@ router.get('/movie-detail/:imbdId', function(req, res, next) {
 
 });
 
+router.get('/movie-search', function(req,res,next) {
+    omdbApi.search(req.query, function(err, data) {
+       res.send(data);
+    });
+
+});
+
 module.exports = router;
