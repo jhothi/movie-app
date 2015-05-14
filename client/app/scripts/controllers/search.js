@@ -11,7 +11,10 @@ angular.module('clientApp')
   .controller('SearchCtrl', function ($scope, $location, movieService) {
     var query = $location.search().q;
     movieService.search(query).then(function(result) {
-      $scope.result = result;
+      $scope.movies = result.data;
     });
+    $scope.goToDetail = function(movie) {
+      $location.path('/movie-detail/' + movie.imdbID).search({});
+    }
 
   });

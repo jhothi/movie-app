@@ -1,0 +1,23 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "movie chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhothi/movie-app.git"
+  },
+  "keywords": [
+    "movie",
+    "chat"
+  ],
+  "author": "Jagroop Hothi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhothi/movie-app/issues"
+  },
+  "homepage": "https://github.com/jhothi/movie-app#readme"
+}

@@ -1,0 +1,19 @@
+.search {
+  .content {
+    padding: 10px 0px;
+    cursor: pointer;
+    &.dark {
+      background-color: aliceblue;
+    }
+    &.light {
+      background-color: white;
+    }
+  }
+  .poster {
+    .image {
+      max-width: 100%;
+      width: 100px;
+      height: 150px;
+    }
+  }
+}

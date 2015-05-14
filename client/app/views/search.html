@@ -1,1 +1,13 @@
-<p>{{result}}</p>
+<div class="search">
+  <div class="movie-item" ng-repeat="movie in movies">
+    <div  ng-class-odd="'dark'"  ng-class-even="'light'" class="content row" ng-click="goToDetail(movie)">
+        <div class="poster col-md-3">
+          <img ng-src="{{movie.Poster}}" class="image"/>
+        </div>
+      <div class="col-md-9">
+        <span class="title">{{movie.Title}}</span>
+        <span class="year">({{movie.Year}})</span>
+      </div>
+    </div>
+  </div>
+</div>

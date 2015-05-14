@@ -1,10 +1,10 @@
 {
   "name": "server",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production nodemon ./bin/www",
-    "test": "NODE_ENV=development nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=development node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.12.0",
@@ -15,5 +15,8 @@
     "morgan": "~1.5.1",
     "omdb-client": "^1.0.6",
     "serve-favicon": "~2.2.0"
+  },
+  "engines": {
+    "node": "0.12.2"
   }
 }
