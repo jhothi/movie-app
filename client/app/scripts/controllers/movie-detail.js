@@ -8,13 +8,12 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('MovieDetailCtrl', function ($scope, $routeParams, $http) {
+  .controller('MovieDetailCtrl', function ($scope, $routeParams, movieService) {
     var id = $routeParams.id;
 
 
-    //TODO move to service
-    $http.get('/api/movie-detail/' + id).success(function(data) {
-      $scope.movie = data;
+    movieService.getDetail(id).then(function (movieData) {
+      $scope.movie = movieData.data;
     });
 
   });

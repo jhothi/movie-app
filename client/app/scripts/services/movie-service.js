@@ -12,8 +12,15 @@ angular.module('clientApp')
     this.search = function(q) {
       var config = {
         method: 'GET',
-        url: 'api/movie-search',
+        url: 'api/movie/movie-search',
         params: {query: q}
+      }
+      return $http(config);
+    }
+    this.getDetail = function(id) {
+      var config = {
+        method: 'GET',
+        url: 'api/movie/movie-detail/' + id
       }
       return $http(config);
     }
